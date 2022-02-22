@@ -45,13 +45,42 @@ button{
     width:944px;
     height:166px;
 }
-#carousel {
-    width: 100%;
-    height: 150px;
-    background-color: #ff0000;
-    overflow: auto;
-}
 
-#carousel .slide {
-    display: inline-block;
-}
+#explore-tab-1 div {
+    flex: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #explore-tab-1 img {
+    width: 230px;
+    height: 200px;
+  }
+  
+  #explore-tab-1 {
+        
+    margin-top:-40px;
+    width: 1000px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+ 
+    
+  }
+  .explore
+  {
+      margin-top:150px;
+      background-color:white;
+      width:1500px;
+      height:fit-content;
+      margin-left: 140px;
+  }
+  .scroll
+  {
+      padding-left:10px;
+  }
