@@ -25,7 +25,7 @@
             width: 20px;
             height: 20px;
             display: block;
-            margin-top: 9px;
+            margin-top: 6px;
         }
         
         #subvaccinationquery {
@@ -61,7 +61,7 @@
         
         #health {
             background-image: url(https://newassets.apollo247.com/images/ecosystem-banner.jpg);
-            width: 65%;
+            width: 94%;
             background-repeat: repeat-x;
             padding: 30px;
             margin: auto;
@@ -85,12 +85,12 @@
             text-decoration: none;
             color: #fc9916;
             font-weight: 1100px;
-            margin-top: 10px;
+            margin: 5px 10px;
             font-size: 16px;
         }
         
         .healthblog {
-            width: 70%;
+            width: 100%;
             margin: auto;
         }
         
@@ -115,12 +115,56 @@
         .healthblog>div>p {
             color: #01475B99;
         }
+        
+        .healthblog>div>#readmore {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        #youcanalso {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+        
+        .ulinks {
+            display: flex;
+            color: #00485d;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        #youcanalso>div {
+            border: 1px solid #00485d;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            width: 25%;
+        }
+        
+        #healthcontainer {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 68%;
+            margin: auto;
+        }
+        
+        #read {
+            color: #fc9916;
+            font-weight: bolder;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
     </style>
 
 
 </head>
 
 <body>
+
 
     <div id="querycontainer">
 
@@ -130,22 +174,22 @@
             <div id="subvaccinationquery">
                 <div>
                     <img class="queryicons" src="/icons/faq.png" alt="">
-                    <p>FAQs & Articles</p>
+                    <a class="querylink" href="">FAQs & Articles</a>
 
                 </div>
                 <div>
                     <img class="queryicons" src="/icons/phone-call.png" alt="">
-                    <p>Vaccination queries</p>
+                    <a class="querylink" href="">Vaccination queries</a>
 
                 </div>
                 <div>
                     <img class="queryicons" src="/icons/comment.png" alt="">
-                    <p>Chat with us</p>
+                    <a class="querylink" href="">Chat with us</a>
 
                 </div>
                 <div>
                     <div><img class="queryicons" src="/icons/vaccine.png" alt=""></div>
-                    <p>Cowin registration</p>
+                    <a class="querylink" href="">Cowin registration</a>
 
                 </div>
 
@@ -154,42 +198,53 @@
 
         </div>
         <div>
-            <img id="discover" src="https://newassets.apollo247.com/images/prohealth/prohealthSliderTwo.jpg" alt="">
+            <img id="discover" src="./icons/prohealthSliderTwo.jpg" alt="">
         </div>
-        <div id="health">
-            <div>
-                <h1>HEALTH ARTICLES & RESOURCES</h1>
-                <p>Make better health choices with our curated blogs, videos and expert advice</p>
-
-            </div>
-
-            <div>
-                <img id="tablet" src="https://newassets.apollo247.com/images/h-medicine.svg" alt="">
-            </div>
-
-        </div>
-        <div class="healthblog">
-            <h3>
-                HEALTH BLOG
-            </h3>
-            <div id="underline">
-                <p>Explore healthcare content created every day by our experts</p>
+        <div id="healthcontainer">
+            <div id="health">
                 <div>
-                    <img class="queryicons" src="/icons/comment.png" alt="">
-                    <a id="read" href="">Read the Latest Articles</a>
+                    <h1>HEALTH ARTICLES & RESOURCES</h1>
+                    <p>Make better health choices with our curated blogs, videos and expert advice</p>
+
                 </div>
-            </div>
-            <div id="youcanalso">
-                <p>YOU CAN ALSO</p>
+
                 <div>
-                    <div>
-                        <img src="https://newassets.apollo247.com/images/ic_psychologist.svg" alt="">
-                        <a href=""></a>
+                    <img id="tablet" src="https://newassets.apollo247.com/images/h-medicine.svg" alt="">
+                </div>
+
+            </div>
+            <div class="healthblog">
+                <h3>
+                    HEALTH BLOG
+                </h3>
+                <div id="underline">
+                    <p>Explore healthcare content created every day by our experts</p>
+                    <div id="readmore">
+                        <img class="queryicons" src="/icons/comment.png" alt="">
+                        <a id="read" href="">Read the Latest Articles</a>
                     </div>
                 </div>
+                <p>YOU CAN ALSO</p>
+                <div id="youcanalso">
+
+                    <div>
+                        <img class="queryicons ulinksimg" src="./icons/psychologist.png" alt="">
+                        <a class="ulinks" href=""> Take a mental health scan </a>
+                    </div>
+                    <div>
+                        <img class="queryicons ulinksimg" src="./icons/medical-symbol.png" alt="">
+                        <a class="ulinks" href=""> Explore Healthylife </a>
+                    </div>
+                    <div>
+                        <img class="queryicons ulinksimg" src="./icons/apollo-kavach.jpg" alt="">
+                        <a class="ulinks" href="">Explore Healthylife </a>
+                    </div>
+
+
+
+                </div>
+
             </div>
-
-
 
 
         </div>
