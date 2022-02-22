@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
 body{
     width:1000px;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
 }
 .top{
     display: flex;
     justify-content: space-evenly;
-    background-color:yellow;
+    background-color:white;
 }
 table{
 
@@ -23,10 +27,12 @@ table{
 .profile{
     margin-right:-150px;
 }
-
+h1{
+    margin-left:60px;
+}
 .hello{
     display: flex;
-    background-color:aqua;
+    background-color:white;
     overflow: hidden;
 
 }
@@ -38,49 +44,19 @@ button{
     width:175px;
     height:60px;
 }
-.left{
-    display:
-}
+
 .slider{
-    width:944px;
+    width:1000px;
     height:166px;
+    overflow:scroll;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x:auto;
+    white-space: nowrap;
+}
+.slider .img{
+    margin:10px;
+    margin-top:-10px;
 }
 
-#explore-tab-1 div {
-    flex: 1;
-    margin-left: 15px;
-    margin-top: 15px;
-  }
 
-  #explore-tab-1 img {
-    width: 230px;
-    height: 200px;
-  }
-  
-  #explore-tab-1 {
-        
-    margin-top:-40px;
-    width: 1000px;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-    overflow: scroll;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1px;
- 
-    
-  }
-  .explore
-  {
-      margin-top:150px;
-      background-color:white;
-      width:1500px;
-      height:fit-content;
-      margin-left: 140px;
-  }
-  .scroll
-  {
-      padding-left:10px;
-  }
