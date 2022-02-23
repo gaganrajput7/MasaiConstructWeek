@@ -276,3 +276,68 @@ li>p {
     display: flex;
     margin-top: 5%;
 }
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 67%;
+    background-color: white;
+    gap: 1%;
+}
+
+.category>div {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3%;
+    justify-content: space-between;
+    margin: 1px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#catcont {
+    width: 70%;
+    margin: auto;
+}
+
+.caticon {
+    width: 40px;
+    height: 40px;
+}
+
+.name {
+    font-size: 12px;
+    color: #02475b;
+    margin: 0px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.description {
+    font-size: 12px;
+    color: #02475b99;
+    margin: 4px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 5%;
+}
+
+.below {
+    font-size: 12px;
+    color: #02475b;
+    margin: 0px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding-top: 5%;
+    border-top: 1px solid #007c93;
+}
+
+#catcont>h2 {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #007c93;
+    color: #02475B;
+    width: 67%;
+}
