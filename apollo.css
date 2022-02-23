@@ -1,62 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
-body{
-    width:1000px;
+body {
+    width: 1000px;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
-
     font-family: 'Poppins', sans-serif;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-evenly;
-    background-color:white;
+    background-color: white;
 }
-table{
 
-    margin-left:170px;
-
-
+table {
+    margin-left: 170px;
 }
-.logo{
+
+.logo {
     margin-left: -70px;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.cart{
-    margin-right:-100px;
-}
-.profile{
-    margin-right:-150px;
-}
-h1{
-    margin-left:60px;
-}
-.hello{
-    display: flex;
-    background-color:white;
-    overflow: hidden;
 
+.cart {
+    margin-right: -100px;
 }
-button{
-    width:350px;
+
+.profile {
+    margin-right: -150px;
+}
+
+h1 {
+    margin-left: 60px;
+}
+
+.hello {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+button {
+    width: 350px;
     height: 60px;
 }
-.button{
-    width:175px;
-    height:60px;
+
+.button {
+    width: 175px;
+    height: 60px;
 }
 
-.slider{
-    width:1000px;
-    height:166px;
-    overflow:scroll;
+.slider {
+    width: 1000px;
+    height: 166px;
+    overflow: scroll;
     background-color: black;
     overflow-y: hidden;
-    overflow-x:auto;
+    overflow-x: auto;
     white-space: nowrap;
 }
-.slider .img{
-    margin:10px;
-    margin-top:-10px;
+
+.slider .img {
+    margin: 10px;
+    margin-top: -10px;
 }
-
-
