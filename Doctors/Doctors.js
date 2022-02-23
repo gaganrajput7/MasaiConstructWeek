@@ -207,7 +207,116 @@ var arr = [{
         name: "Pain Management",
         description: "For management of all types of pain",
         below: "Acute pain, Chronic pain, Cancer pain"
-    }
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_urology.png",
+        name: "Urology",
+        description: "For disorders of urinary tract and male reproductive organs",
+        below: "Urinary infection, Kidney stones, Traumatic injury"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_vascularsurgery.png",
+        name: "Vascular & Endovascular Surgery",
+        description: "For minimally invasive surgical treatment of blood vessel disorders",
+        below: "Blood clots, Ulcers, Leg swelling"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/e835ec4b-cb17-47a8-91bb-c5cf207a1db2.jpg",
+        name: "Surgical Oncology",
+        description: "For diagnosis & surgical treatment of cancer",
+        below: "Prevent cancer, Removal of cancerous tumor"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/86b4284f-3358-44e4-a85c-2ce3de5b8c4f.jpg",
+        name: "Transplant Surgery",
+        description: "Managing organ replacement/transplant",
+        below: "Kidney failure, Lung disease, Heart disease"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/bfac9eaf-e1c1-4a64-b10a-e5b33ed1567c.jpg",
+        name: "Spine Surgery",
+        description: "For surgeries of the spine",
+        below: "Back pain, Neck pain"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/b4be465c-eb0e-4295-9460-ebb6b526fa05.jpg",
+        name: "Surgical Gastroenterology",
+        description: "For surgical treatment of the digestive system",
+        below: "Surgery- Stomach, Livers, Rectal bleeding"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/bb67daa7-5449-4987-b185-c907b19128c8.jpg",
+        name: "Sleep Medicine",
+        description: "Diagnosis & treatment of sleep disorders",
+        below: "Insomnia, Constant Fatigue, Snoring"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/f752370c-67cc-4c2b-9387-3529f3e34ac5.jpg",
+        name: "Speech Therapy",
+        description: "Treatment of speech disorders",
+        below: "Stuttering, Repeating sound, Elongating words"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_rheumatology.png",
+        name: "Rheumatology",
+        description: "For treatment of rheumatic diseases",
+        below: "Rheumatoid arthritis, Osteoporosis, Gout"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/33100aa2-2b45-4671-b7d7-68c2e22cd049.jpg",
+        name: "Sexual Health",
+        description: "For treatment of Sexual Disorders",
+        below: "Painful intercourse, Loss of sexual desire"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/9807866d-b385-47b0-8d65-47b7bae3c3cb.jpg",
+        name: "Radiation Oncology",
+        description: "Treating radiation therapy to treat cancer",
+        below: "Cancer- Eye, Prostate, Breast, Cervix"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_radiology.png",
+        name: "Radiology",
+        description: "For medical imaging",
+        below: "Knee injury, Cancer, Tumor"
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/a7140a26-4955-4c50-bb6a-3299b8de886c.jpg",
+        name: "Psychology",
+        description: "Therapists for helping in mental health issue",
+        below: "Phobias, Family and Personal Counselling"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_pulmonology.png",
+        name: "Pulmonology/ Respiratory Medicine",
+        description: "Managing lung and respiratory disorders",
+        below: "Chest pain, Breathing difficulty, Asthma, TB"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_podiatry.png",
+        name: "Podiatry",
+        description: "For treating foot, ankle and leg disorders",
+        below: "Foot injury, Ankle injury, Diabetic foot"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_psychiatrist.png",
+        name: "Psychiatry",
+        description: "Specialists to help treat mental health",
+        below: "Anxiety, Depression, Stress, OCD, Bipolar"
+
+    },
+    {
+        image: "https://prodaphstorage.blob.core.windows.net/specialties/244b0282-e14c-42f0-af6e-613bd8af6934.jpg",
+        name: "Physiotherapy and Rehabilitation",
+        description: "For facilitating recovery from illness/injuries",
+        below: "Post-Covid, Recovery from surgeries"
+    },
+    {
+        image: "https://newassets.apollo247.com/specialties/ic_plastic_surgery.png",
+        name: "Plastic Surgery",
+        description: "For restoration, reconstruction, alteration of human body",
+        below: "Cosmetic surgery, Burns, Rhinoplasty"
+    },
 
 ]
 
