@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        font-family: sans-serif;
+        color: rgb(1,71,91);
+    }
+.top1{
+    
+    width: 80%;
+    height: auto;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 90px;
+       
+}
+input{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    height: 50px;
+    width: 50%;
+    justify-content: center;
+    background-color: rgb(247,248,245);
+}
+#main {
+display: grid;
+grid-template-columns: 800px 290px;
+grid-template-rows: 200px;
+gap: 110px;
+justify-content: center;
+}
+#main>div{
+    margin-top: 20px;
+    
+}
+.box2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    margin: auto;
+    gap: 10px;
+    width: 81%;
+    justify-content: space-between;
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: repeat(7,190px);
+    grid-template-rows: auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 0px;
+}
+.box3>div{
+border: 1px solid red;
+align-items: center;
+margin: auto;
+
+
+}
+.box3>div>img {
+    width: 50px;
+    height: 50px;
+}
+.box4 {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    margin: auto;
+    gap: 10px;
+    width: 81%;
+    justify-content: space-between;
+}
+.box5 {
+    display: grid;
+    grid-template-columns: repeat(3,280px);
+    grid-template-rows: 300px;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="top"><div class="top1">
+        <img src="https://newassets.apollo247.com/images/ic-search.svg" height="30px" alt="">
+        <input type="text" name="box" placeholder="Search test and packages">
+        <a href="">My Orders </a>
+        <img src="https://newassets.apollo247.com/images/ic_arrow_right.svg" alt="">
+    </div></div>
+     <div id="main">
+
+<div><img src="https://newassets.apollo247.com/cms/2022-01/Tax_Saver_web_Banner_%20(1).jpg" width="100%" height="100%" alt=""></div>
+<div class="box2"><img src="https://newassets.apollo247.com/images/ic_prescriptiontest.png" height="30px" alt="">
+<h3>Upload Prescription to
+    place an order</h3>
+</div>
+</div>
+<div class="box2"><h3>POPULAR CATEGORIES (31)</h3>
+<span>View All</span>
+</div>
+<div class="box3"></div>
+<div class="box4"><h3>POPULAR HEALTH CHECKUP PACKAGES (84)
+</h3>
+    <span>View All</span>
+    </div>
+    <div class="5"></div>
+    </div>
+</body>
+</html>
+<script>
+var obj = [
+{image: "https://newassets.apollo247.com/cms/2021-06/infection.png",
+text:"Covid 19"},
+{image: "https://newassets.apollo247.com/cms/2021-07/Senior%20citizen.png",
+text:"Senior Citizen"},
+{image: "https://newassets.apollo247.com/cms/2021-05/diabetes_0.png",
+text:"Diabetes"},
+{image: "https://newassets.apollo247.com/cms/2021-07/Full%20body.png",
+text:"Full Body Che..."},
+{image: "https://newassets.apollo247.com/cms/2021-05/fever.png",
+text:"Fever"},
+{image: "https://newassets.apollo247.com/cms/2021-07/Women%20health_0.png",
+text:"Women's Hea..."},
+{image: "https://newassets.apollo247.com/cms/2021-05/anemia.png",
+text:"Anemia"},
+];
+obj.map(function(elem){
+var div = document.createElement("div");
+var image = document.createElement("img");
+image.setAttribute("src", elem.image);
+var text = document.createElement("h4");
+text.innerText=elem.text;
+div.append(image,text);
+document.querySelector(".box3").append(div);
+});
+
+var obj2 = [
+{name:"Special Health Package"},
+
+];
+obj2.map(function(elem){
+var div = document.createElement("div");
+var head = document.createElement("h3");
+head.innerText=elem.name;
+ div.append(head);
+document.querySelector(".box5").append(div);
+
+});
+
+</script>
