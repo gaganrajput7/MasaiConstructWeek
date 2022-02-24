@@ -9,14 +9,20 @@
     body {
         font-family: sans-serif;
         color: rgb(1,71,91);
+        margin: auto;
+        
     }
+*{
+    border: 1px solid red;
+}
 .top1{
     
     width: 80%;
     height: auto;
-    border: 1px solid red;
+    border: 1px solid black;
     margin: auto;
     margin-top: 90px;
+    justify-content: space-evenly;
        
 }
 input{
@@ -44,25 +50,27 @@ justify-content: center;
     align-items: center;
     border: 1px solid red;
     margin: auto;
-    gap: 10px;
+    margin-top: 15px;
     width: 81%;
     justify-content: space-between;
 }
 
 .box3 {
     display: grid;
-    grid-template-columns: repeat(7,190px);
-    grid-template-rows: auto;
-    text-align: center;
+    grid-template-columns: repeat(7,150px);
+    grid-template-rows: 200px;
+    align-items: center;
     justify-content: center;
     margin-top: 10px;
-    gap: 0px;
+    gap: 25px;
+    
+    
 }
-.box3>div{
-border: 1px solid red;
-align-items: center;
-margin: auto;
-
+.box3>div {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    text-align: center;
 
 }
 .box3>div>img {
@@ -79,9 +87,6 @@ margin: auto;
     justify-content: space-between;
 }
 .box5 {
-    display: grid;
-    grid-template-columns: repeat(3,280px);
-    grid-template-rows: 300px;
 display: grid;
 grid-template-columns: repeat(3,370px);
 grid-template-rows: 300px;
@@ -91,16 +96,80 @@ gap: 40px;
 .box5>div {
     border: 1px solid red;
 }
+.inner>img{
+    height: 60%;
+    width: 60%;
+
+    
+}
+
+.inner{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    background-color: rgb(243,243,243);
+    border-radius: 50%;
+margin-top: 40px;
+}
+.innerbox{
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.box6>div
+{
+    width: 80%;
+    margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+border-radius: 10px;
+margin-top: 20px;
+}
+.box7 {
+    display: grid;
+grid-template-columns: repeat(6,180px);
+grid-template-rows: 300px;
+justify-content: center;
+gap: 20px;
+}
+.box7>div {
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box7>div img
+{
+height: 20px;
+width: 20px;
+}
+hr { 
+  display: block;
+  width: 80%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+.price {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
 </style>
 
 </head>
 <body>
-    <div id="top"><div class="top1">
+    <div class="top1">
         <img src="https://newassets.apollo247.com/images/ic-search.svg" height="30px" alt="">
         <input type="text" name="box" placeholder="Search test and packages">
         <a href="">My Orders </a>
         <img src="https://newassets.apollo247.com/images/ic_arrow_right.svg" alt="">
-    </div></div>
+    </div>
      <div id="main">
 
 <div><img src="https://newassets.apollo247.com/cms/2022-01/Tax_Saver_web_Banner_%20(1).jpg" width="100%" height="100%" alt=""></div>
@@ -113,11 +182,22 @@ gap: 40px;
 <span>View All</span>
 </div>
 <div class="box3"></div>
-<div class="box4"><h3>POPULAR HEALTH CHECKUP PACKAGES (84)
+<div class="box2"><h3>POPULAR HEALTH CHECKUP PACKAGES (84)
 </h3>
     <span>View All</span>
     </div>
     <div class="box5"></div>
+    <div class="box6"><div> <h3><img src="https://newassets.apollo247.com/images/ic_workflow.png" alt="">
+        3 simple steps to get a lab test done from the comfort of your home</h3>
+    <span><img src="https://newassets.apollo247.com/images/ic_back.png" alt=""></span></div>
+       
+        </div>
+    </div>
+    <div class="box2"><h3>TOP BOOKED TESTS (16)</h3>
+    <span>View All</span>
+    </div>
+    <div class="box7"></div>
+    
     </div>
 </body>
 </html>
@@ -140,11 +220,17 @@ text:"Anemia"},
 ];
 obj.map(function(elem){
 var div = document.createElement("div");
+var div2 = document.createElement("div");
+div2.setAttribute("class","innerbox");
+var div3 = document.createElement("div");
+div3.setAttribute("class","inner")
 var image = document.createElement("img");
 image.setAttribute("src", elem.image);
 var text = document.createElement("h4");
 text.innerText=elem.text;
-div.append(image,text);
+div3.append(image)
+div2.append(div3)
+div.append(div2,text);
 document.querySelector(".box3").append(div);
 });
 
@@ -160,5 +246,56 @@ head.innerText=elem.name;
  div.append(head);
 document.querySelector(".box5").append(div);
 });
+
+var obj3 = [
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/virus.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+];
+obj3.map(function(elem){
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src",elem.image);
+var text = document.createElement("h3");
+text.innerText=elem.text;
+var simple = document.createElement("p");
+simple.innerText=elem.simpletext;
+var line = document.createElement("hr");
+var shortimg = document.createElement("img");
+shortimg.setAttribute("src",elem.shortimage);
+var price = document.createElement("p");
+price.innerText="price र 700"
+var div2 = document.createElement("div");
+div2.setAttribute("class","price");
+var rate = document.createElement("h3");
+rate.innerText="₹800"
+var cart = document.createElement("span");
+cart.innerText="Add to cart"
+div2.append(shortimg,price)
+div.append(img,text,simple,line,div2,rate,cart);
+document.querySelector(".box7").append(div)
+});
+
 
 </script>
