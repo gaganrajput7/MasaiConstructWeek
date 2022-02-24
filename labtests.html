@@ -82,8 +82,15 @@ margin: auto;
     display: grid;
     grid-template-columns: repeat(3,280px);
     grid-template-rows: 300px;
+display: grid;
+grid-template-columns: repeat(3,370px);
+grid-template-rows: 300px;
+justify-content: center;
+gap: 40px;
 }
-
+.box5>div {
+    border: 1px solid red;
+}
 </style>
 
 </head>
@@ -110,7 +117,7 @@ margin: auto;
 </h3>
     <span>View All</span>
     </div>
-    <div class="5"></div>
+    <div class="box5"></div>
     </div>
 </body>
 </html>
@@ -143,7 +150,8 @@ document.querySelector(".box3").append(div);
 
 var obj2 = [
 {name:"Special Health Package"},
-
+{name:"Diabetes And Lipid Profile"},
+{name:"Comprehensive Package -Women"},
 ];
 obj2.map(function(elem){
 var div = document.createElement("div");
@@ -151,7 +159,6 @@ var head = document.createElement("h3");
 head.innerText=elem.name;
  div.append(head);
 document.querySelector(".box5").append(div);
-
 });
 
 </script>
