@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
 body{
     width:max-content;
@@ -19,9 +20,19 @@ tr{
 .notfooter{
     width: 1000px;
     background-color: white;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
+body {
+    width: 1000px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+>>>>>>> 97539d5fde9dbc8c496ee36199cea4c0e3467a13
 }
-.top{
+
+.top {
     display: flex;
+<<<<<<< HEAD
     justify-content:space-evenly;
     background-color:white;
 }
@@ -32,8 +43,16 @@ table{
     height:70px;
 
 
-
+=======
+    justify-content: space-evenly;
+    background-color: white;
 }
+>>>>>>> 97539d5fde9dbc8c496ee36199cea4c0e3467a13
+
+table {
+    margin-left: 170px;
+}
+<<<<<<< HEAD
 .logo{
     margin-right:70px;
     margin-top:10px;
@@ -43,35 +62,64 @@ table{
 }
 .profile{
     margin-right:-100px;
-}
-h1{
-    margin-left:60px;
-}
-.hello{
-    display: flex;
-    background-color:white;
-    overflow: hidden;
+=======
 
+.logo {
+    margin-left: -70px;
+    margin-top: 10px;
 }
+
+.cart {
+    margin-right: -100px;
+}
+
+.profile {
+    margin-right: -150px;
+>>>>>>> 97539d5fde9dbc8c496ee36199cea4c0e3467a13
+}
+
+h1 {
+    margin-left: 60px;
+}
+
+.hello {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+<<<<<<< HEAD
 .slider{
     margin-top:40px;
     background-color: white;
     width:900px;
     height:160px;
     overflow:scroll;
+=======
+
+button {
+    width: 350px;
+    height: 60px;
+}
+
+.button {
+    width: 175px;
+    height: 60px;
+}
+
+.slider {
+    width: 1000px;
+    height: 166px;
+    overflow: scroll;
+>>>>>>> 97539d5fde9dbc8c496ee36199cea4c0e3467a13
     background-color: black;
     overflow-y: hidden;
-    overflow-x:auto;
+    overflow-x: auto;
     white-space: nowrap;
     margin-left: 50px;
     border-radius: 5px;
 }
-.slider .img{
-    margin:10px;
-    margin-top:-10px;
-}
 
-
+<<<<<<< HEAD
 button{
     width:350px;
     height:60px;
@@ -241,4 +289,9 @@ span{
     color:white;
     width: 5px;
     height: 5px;
+=======
+.slider .img {
+    margin: 10px;
+    margin-top: -10px;
+>>>>>>> 97539d5fde9dbc8c496ee36199cea4c0e3467a13
 }
