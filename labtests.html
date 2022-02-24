@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>www.apollo247.com</title>
 <style>
+    .top{
+        display: flex;
+        justify-content: space-evenly;
+    }
     body {
         font-family: sans-serif;
         color: rgb(1,71,91);
         margin: auto;
         
     }
-*{
-    border: 1px solid red;
-}
+
 .top1{
     
     width: 80%;
@@ -48,7 +50,7 @@ justify-content: center;
 .box2 {
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    
     margin: auto;
     margin-top: 15px;
     width: 81%;
@@ -80,7 +82,7 @@ justify-content: center;
 .box4 {
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    
     margin: auto;
     gap: 10px;
     width: 81%;
@@ -123,20 +125,20 @@ margin-top: 40px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 border-radius: 10px;
 margin-top: 20px;
 }
 .box7 {
     display: grid;
 grid-template-columns: repeat(6,180px);
-grid-template-rows: 300px;
+
 justify-content: center;
 gap: 20px;
 }
 .box7>div {
-    border: 1px solid red;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .box7>div img
 {
@@ -159,15 +161,52 @@ hr {
     text-align: center;
     align-items: center;
 }
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(252,178,22);
+}
 
 </style>
 
 </head>
 <body>
+
+
+    <div class="top">
+        <div><img class="logo" src="ic_logo.webp" width="80px" height="59px" alt=""></div>
+        <div class="table">
+            <table width="457px" height="90px">
+                <tr class="'smaller">
+                   <td><u>DOCTORS</u></td>
+                   <td><u>PHARMACY</u></td>
+                   <td><u>LAB TESTS</u></td>
+                   <td><u>COVID-19</u></td>
+               </tr>
+               <tr>
+                   <td>Consult</td>
+                   <td>Medicines &</td>
+                   <td>Health</td>
+                   <td>Latest</td>
+               </tr>
+               <tr>
+                   <td>Online</td>
+                   <td>other products</td>
+                   <td>check-ups</td>
+                   <td>udpates</td>
+               </tr>
+              
+            </table>
+        </div>
+        <div><img class="cart" src="cart.png" width="56px" height="90px" alt=""></div>
+        <div> <img class="profile" src="Profie.png" width="72px" height="88px" alt=""></div>
+   </div>
+
     <div class="top1">
         <img src="https://newassets.apollo247.com/images/ic-search.svg" height="30px" alt="">
         <input type="text" name="box" placeholder="Search test and packages">
-        <a href="">My Orders </a>
+        <a href="">My Orders</a>
+        
         <img src="https://newassets.apollo247.com/images/ic_arrow_right.svg" alt="">
     </div>
      <div id="main">
@@ -179,12 +218,12 @@ hr {
 </div>
 </div>
 <div class="box2"><h3>POPULAR CATEGORIES (31)</h3>
-<span>View All</span>
+    <a href="">View All</a>
 </div>
 <div class="box3"></div>
 <div class="box2"><h3>POPULAR HEALTH CHECKUP PACKAGES (84)
 </h3>
-    <span>View All</span>
+<a href="">View All</a>
     </div>
     <div class="box5"></div>
     <div class="box6"><div> <h3><img src="https://newassets.apollo247.com/images/ic_workflow.png" alt="">
@@ -194,7 +233,8 @@ hr {
         </div>
     </div>
     <div class="box2"><h3>TOP BOOKED TESTS (16)</h3>
-    <span>View All</span>
+    
+    <a href="">View All</a>
     </div>
     <div class="box7"></div>
     
@@ -235,15 +275,20 @@ document.querySelector(".box3").append(div);
 });
 
 var obj2 = [
-{name:"Special Health Package"},
-{name:"Diabetes And Lipid Profile"},
-{name:"Comprehensive Package -Women"},
+{name:"Special Health Package",
+text:"TOTAL INCLUSIONS : 63"},
+{name:"Diabetes And Lipid Profile",
+text:"TOTAL INCLUSIONS : 63"},
+{name:"Comprehensive Package -Women",
+text:"TOTAL INCLUSIONS : 63"},
 ];
 obj2.map(function(elem){
 var div = document.createElement("div");
 var head = document.createElement("h3");
 head.innerText=elem.name;
- div.append(head);
+var text = document.createElement("p");
+text.innerText=elem.text;
+ div.append(head,text);
 document.querySelector(".box5").append(div);
 });
 
@@ -252,23 +297,23 @@ var obj3 = [
 text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/virus.png",
+{image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/virus.png",
+{image:"https://newassets.apollo247.com/organs/ic_blood.png",
+text:"Covid 19 RTPCR With Home...",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/organs/ic_thyroid.png"},
+{image:"https://newassets.apollo247.com/organs/ic_thyroid.png",
 text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/virus.png",
+{image:"https://newassets.apollo247.com/organs/ic_liver.png",
 text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/virus.png",
-text:"Covid 19 RTPCR With Home...",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/virus.png",
+{image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
