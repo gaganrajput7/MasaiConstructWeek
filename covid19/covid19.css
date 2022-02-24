@@ -244,7 +244,10 @@ body{background-color: #dcdfce;margin: 0;}
 }
 .mailgrid img{margin-left: 100px;margin-right:120px; margin-top: 40px;}
 
-.mailgrid div h3{padding-top: 10px;border:2px solid red}
+.mailgrid div h3{padding-top: 10px;}
+.mailgrid div p{font-size: 13px;}
 .mailgrid div h5{color: #020d11;}
-.mailgrid div input{font-size: 17px;width:300px;color: #00b38e; border: turquoise; border-bottom: 2px solid #979999;}
+.mailgrid div input{font-size: 16px;width:250px;color: #00b38e; border: turquoise; border-bottom: 2px solid #979999;}
 .mailgrid div button{ padding:15px 40px;color:white;background-color: #e0e0e0;border-radius: 5px; border: turquoise;}
+
+.article{width:100%;display: flex;}
