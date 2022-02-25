@@ -316,7 +316,7 @@ var arr = [{
         name: "Plastic Surgery",
         description: "For restoration, reconstruction, alteration of human body",
         below: "Cosmetic surgery, Burns, Rhinoplasty"
-    },
+    }
 
 ]
 

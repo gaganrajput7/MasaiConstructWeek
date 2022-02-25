@@ -1,12 +1,12 @@
 body {
     background-color: #f3f3f3;
-    font-family: IBM Plex Sans, sans-serif;
+    font-family: sans-serif;
 }
 
 .topcont {
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
     width: 70%;
     height: 800px;
     margin: auto;
@@ -185,7 +185,7 @@ body {
     line-height: 170%;
 }
 
-button {
+.whybutton {
     color: black;
     font-family: sans-serif;
     padding: 3% 5%;
@@ -282,7 +282,8 @@ li>p {
     grid-template-columns: repeat(2, 1fr);
     width: 67%;
     background-color: white;
-    gap: 1%;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .category>div {
