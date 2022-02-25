@@ -176,6 +176,37 @@ a {
     width: 81%;
     justify-content: space-between;
 }
+
+.diabetes {
+    display: grid;
+grid-template-columns: repeat(6,180px);
+
+justify-content: center;
+gap: 20px;
+}
+.diabetes>div {
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.diabetes>div img
+{
+height: 20px;
+width: 20px;
+}
+.information{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: 200px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.information>div{
+    
+    text-align: center;
+    
+    margin-top: 20px;
+    padding-top: 40px;
+}
 </style>
 
 </head>
@@ -252,7 +283,40 @@ a {
     <a href="">View All</a>
     </div>
     <div class="box7"></div>
-    
+    <div class="bar"><h3>DIABETES SCREENING (29)
+    </h3>
+    <a href="">View All</a>
+        </div>
+    <div class="diabetes"></div>
+    <div class="bar"><h3>WHY BOOK WITH US?
+    </h3>
+        </div>
+        <div class="information">
+<div> <img src="https://newassets.apollo247.com/images/ic_surface.png" alt="">
+    <h2>3.5</h2>
+    <h3>Million tests every year
+    </h3>
+</div>
+<div>
+    <img src="https://newassets.apollo247.com/images/ic_legacy.png" alt="">
+    <h2>36</h2>
+    <h3>Years of legacy
+    </h3>
+</div>
+<div>
+    <img src="https://newassets.apollo247.com/images/ic_laboratories.png" alt="">
+    <h2>100+</h2>
+    <h3>Laboratories
+    </h3>
+</div>
+<div>
+    <img src="https://newassets.apollo247.com/images/ic_cities.png" alt="">
+    <h2>30+ Cities &</h2>
+    <h3>700+ Collection centres
+    </h3>
+</div>
+
+        </div>
     </div>
 </body>
 </html>
@@ -313,23 +377,23 @@ text:"Covid 19 RTPCR With Home...",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Covid 19 RTPCR With Home...",
-simpletext:"3 Parameters included",
+text:"Complete Blood Count (CBC)",
+simpletext:"13 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Covid 19 RTPCR With Home...",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/organs/ic_thyroid.png"},
+text:"C-Reactive Protein...",
+simpletext:"4 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 {image:"https://newassets.apollo247.com/organs/ic_thyroid.png",
-text:"Covid 19 RTPCR With Home...",
-simpletext:"3 Parameters included",
+text:"Thyroid Profile - Free (FT3, FT4,.",
+simpletext:"8 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 {image:"https://newassets.apollo247.com/organs/ic_liver.png",
-text:"Covid 19 RTPCR With Home...",
-simpletext:"3 Parameters included",
+text:"Liver Function Test (LFT)",
+simpletext:"9 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Covid 19 RTPCR With Home...",
+text:"Complete Urine Examination",
 simpletext:"3 Parameters included",
 shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
 ];
@@ -356,6 +420,63 @@ div2.append(shortimg,price)
 div.append(img,text,simple,line,div2,rate,cart);
 document.querySelector(".box7").append(div);
 });
+
+
+var obj4 = [
+{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
+text:"Diabetes And Lipid Profile",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
+text:"Diabetes... Screening",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
+text:"Diabetes Package Basic",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/organs/ic_thyroid.png"},
+{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
+text:"Diabetes Package Advance",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/ic_blood.png",
+text:"Lipid Profile",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+{image:"https://newassets.apollo247.com/organs/ic_blood.png",
+text:"HbA1c, Glycated Hemoglobin",
+simpletext:"3 Parameters included",
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+];
+
+obj4.map(function(elem){
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src",elem.image);
+var text = document.createElement("h3");
+text.innerText=elem.text;
+var simple = document.createElement("p");
+simple.innerText=elem.simpletext;
+var line = document.createElement("hr");
+var shortimg = document.createElement("img");
+shortimg.setAttribute("src",elem.shortimage);
+var price = document.createElement("p");
+price.innerText="price र 700"
+var div2 = document.createElement("div");
+div2.setAttribute("class","price");
+var rate = document.createElement("h3");
+rate.innerText="₹800"
+var cart = document.createElement("span");
+cart.innerText="Add to cart"
+div2.append(shortimg,price)
+div.append(img,text,simple,line,div2,rate,cart);
+document.querySelector(".diabetes").append(div);
+});
+
+
+
+
+
 
 
 </script>
