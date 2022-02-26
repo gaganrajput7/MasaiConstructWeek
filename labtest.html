@@ -332,7 +332,7 @@ hr {
     margin-left: 10px;
     
 }
-<<<<<<< HEAD
+
 .women{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -366,8 +366,8 @@ border: 1px solid red;
     width: 26px;
     height: 18px;
     margin-right: 10px;
-=======
-#container11{
+}
+/* #container11{
             width: 95%;
             margin: auto;
             padding: 30px;
@@ -404,17 +404,17 @@ border: 1px solid red;
         }
        .about > p{
             color: #fff;
-            display: inline-block;
-            font-size: 15px;
-            font-weight: bold;
-            text-align: left;
+         
             line-height: 1px;
             margin-right: 10px;
         }
->>>>>>> 1a1e4b1d4078657226d97e9ee8a6429e85b41f43
+>>>>>>> 1a1e4b1d4078657226d97e9ee8a6429e85b41f43   display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left; */
     </style>
 </head>
-<body id="head">
+<body>
     
    
     <div id="container">
@@ -537,7 +537,7 @@ border: 1px solid red;
                    <div class="womenwell"></div>     
 
  </div>
- <div id="container11">
+  <!-- <div id="container11">
     <h3>One-Stop Solution to your Diagnostic Needs!</h3>
     <p>Apollo Diagnostics is one of the most trusted, one-stop solutions for all complex pathology tests. We believe that the accurate diagnosis of a health issue is vital for further treatment, and the results of lab tests are the backbone for an effective treatment plan. You should keep track of your health by 
         booking a test online and getting yourself treated timely.</p>
@@ -668,7 +668,7 @@ border: 1px solid red;
        
     </div>    
     
-</div>
+</div>  -->
 </body>
 </html>
 
@@ -928,14 +928,14 @@ document.querySelector(".vital").append(div)
 });
 
 var womenorgan = [
-{image:"https://newassets.apollo247.com/cms/2021-05/heart.png",
-text:"Heart"},
-{image:"https://newassets.apollo247.com/cms/2021-05/thyroid.png",
-text:"Thyroid"},
-{image:"https://newassets.apollo247.com/cms/2021-05/jointpain_0.png",
-text:"Joint Pain"},
-{image:"https://newassets.apollo247.com/cms/2021-05/liver.png",
-text:"Liver"},
+{image:"https://newassets.apollo247.com/cms/2021-05/anemia.png",
+text:"Anemia"},
+{image:"https://newassets.apollo247.com/cms/2021-05/pregnancy.png",
+text:"Pregnancy"},
+{image:"https://newassets.apollo247.com/cms/2021-05/anemia.png",
+text:"Iron Studies"},
+{image:"https://newassets.apollo247.com/cms/2021-05/vitamin%20deficiency.png",
+text:"Vitamin Defic..."},
 ];
 womenorgan.map(function(elem){
 
@@ -959,42 +959,39 @@ document.querySelector(".women").append(div);
 
 });
 
-
-
-
-
-
-
-
-
-
-var diaeties = [
+var womenwill = [
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"Diabetes And Lipid Profile",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 469"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"Diabetes... Screening",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 9469"},
 {image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
 text:"Diabetes Package Basic",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 2969"},
 {image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
-text:"Diabetes Package Advance",
+text:"Diabetes Package ",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 3469"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"Lipid Profile",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 2469"},
 {image:"https://newassets.apollo247.com/organs/ic_blood.png",
 text:"HbA1c, Glycated Hemoglobin",
 simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
+shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+price:"₹ 800"},
 ];
-diaeties.map(function(elem){
+womenwill.map(function(elem){
 var div = document.createElement("div");
 var div1 = document.createElement("div");
 div1.setAttribute("class","shortimg");
@@ -1017,7 +1014,7 @@ p.innerText="Price ₹700";
 var div5 = document.createElement("div");
 div5.setAttribute("class","price");
 var h2 = document.createElement("h3");
-h2.innerText="₹ 700";
+h2.innerText=elem.price;
 
 div5.append(h2)
 var div6 = document.createElement("div");
