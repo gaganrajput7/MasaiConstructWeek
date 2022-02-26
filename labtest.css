@@ -145,8 +145,8 @@ gap: 10px;
 }
 .popular2>div{
 border-radius: 10px;
-padding: 10px;
-line-height: 10px;
+
+
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .popular2>div > img{
@@ -358,4 +358,34 @@ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1p
 width: 26px;
 height: 18px;
 margin-right: 10px;
+}
+.pacage{
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+.popular2 p {
+    margin-left: 20px;
+    font-size: small;
+}
+.pacage1{
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+.shortp{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.shortp>img{
+    width: 30px;
+    height: 30px;
+}
+.pricecart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right: 10px;
 }

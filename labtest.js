@@ -39,48 +39,76 @@ var popular = [
     
     
     var popular2 = [
-    {name:"Special Health Package",
-    name1:"Premium",
+   {
+     head:"Special Health Package Premium",
+     text:"TOTAL INCLUSIONS : 63",
+     text2:"Hba1c, Glycated Hemoglobin",
+     text3:"Estimated Average Glucose (Eag)", a:"+58 More",
+     shortprice:"price 2400",
+     shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+     shortprice1:"MRP 6530 57% off ",
+     price:"₹ 2824 save 23706",
+   },
+   {
+    head:"Special Health Package Premium",
     text:"TOTAL INCLUSIONS : 63",
-    name2:"Hba1c, Glycated Hemoglobin",
-    name3:"Estimated Average Glucose(Eag)",
-    image1:"https://newassets.apollo247.com/images/circle_logo.png",
-    name4:"Price र 2400"},
-    {name:"Comprehensive Package ",
-    name1:"-Women",
-    text:"TOTAL INCLUSIONS : 65",
-    name2:"Hba1c, Glycated Hemoglobin",
-    name3:"Estimated Average Glucose(Eag)",
-    image1:"https://newassets.apollo247.com/images/circle_logo.png",
-    name4:"Price र 1999"},
-    {name:"Diabetes And Lipid ",
-    name1:"Profile ",
-    text:"TOTAL INCLUSIONS : 12",
-    name2:"Hba1c, Glycated Hemoglobin",
-    name3:"Estimated Average Glucose(Eag)",
-    image1:"https://newassets.apollo247.com/images/circle_logo.png",
-    name4:" Price र 698"},
+    text2:"Hba1c, Glycated Hemoglobin",
+    text3:"Estimated Average Glucose (Eag)", a:"+58 More",
+    shortprice:"price 2400",
+    shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+    shortprice1:"MRP 6530 57% off ",
+    price:"₹ 2824 save 23706",
+  },
+  {
+    head:"Special Health Package Premium",
+    text:"TOTAL INCLUSIONS : 63",
+    text2:"Hba1c, Glycated Hemoglobin",
+    text3:"Estimated Average Glucose (Eag)",
+    a:"+58 More",
+
+    shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
+    shortprice:"price 2400",
+    shortprice1:"MRP 6530 57% off ",
+    price:"₹ 2824 save 23706",
+  }
     ];
     
-    popular2.map(function(elem){
-        var div = document.createElement("div");
-    var head = document.createElement("h3");
-    head.innerText=elem.name;
-    var name1 = document.createElement("h3");
-    name1.innerText=elem.name1;
-    var text = document.createElement("p");
-    text.innerText=elem.text;
-    var name2 = document.createElement("h5");
-    name2.innerText=elem.name2;
-    var name3 = document.createElement("h5");
-    name3.innerText=elem.name3;
-    var name4 = document.createElement("p");
-    name4.innerText=elem.name4;
-    var image1 = document.createElement("img");
-    image1.setAttribute("src",elem.image1);
-    div.append(head,name1,text,name2,name3,image1,name4);
+popular2.map(function(elem){
+ var div = document.createElement("div");
+ var div1 = document.createElement("div");
+div1.setAttribute("class","pacage");
+var text = document.createElement("h3");
+text.innerHTML=elem.head;
+var text2 = document.createElement("p");
+text2.innerText=elem.text;
+var line = document.createElement("p");
+line.innerText=elem.text2;
+var div3 = document.createElement("div");
+div3.setAttribute("class","pacage1")
+ var text3 = document.createElement("p");
+ var a = document.createElement("a");
+ a.innerText=elem.a;
+ text3.innerText=elem.text3;
+ var li = document.createElement("hr");
+var div4 = document.createElement('div');
+div4.setAttribute("class","shortp");
+var simg = document.createElement("img");
+simg.setAttribute("src",elem.shortimage);
+var stext = document.createElement("p");
+stext.innerText=elem.shortprice;
+var div5 = document.createElement("div");
+div5.setAttribute("class","pricecart");
+var a1 = document.createElement("a");
+a1.innerText="ADD TO CART";
+var h = document.createElement("h4");
+h.innerText=elem.price;
+div5.append(h,a1)
+div4.append(simg,stext)
+ div3.append(text3,a)
+div1.append(text)
+div.append(div1,text2,line,div3,li,div4,div5);
     
-    document.querySelector(".popular2").append(div)
+document.querySelector(".popular2").append(div);
     });
     
     
