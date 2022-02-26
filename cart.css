@@ -48,9 +48,14 @@ body{
     margin-top: -20px;
     width: 500px;
     box-shadow:10px 5px 5px grey ;
+
+   
 }
 .rightt{
     width:490px;
+}
+.totalcharges{
+    display: inline;
 }
 hr{
     width: 660px;
@@ -65,7 +70,7 @@ hr{
 }
 .product{
     width: 100px;
-    height: 130px;
+    height: 180px;
     background-color: white;
     box-shadow: 10px 5px 5px grey;
 }
@@ -75,7 +80,7 @@ button{
     border-radius:10px;
 }
 .tables2{
-    margin-top: 20px;
+    margin-top:50px;
     width: 1242px;
     height: 200px;
     color: white;
@@ -91,4 +96,11 @@ button{
 }
 .mediumfeet{
     font-size:smaller;
+}
+.product>img{
+    width: 100px;
+    height: 100px;
+}
+.product>p{
+    font-size:10px;
 }
