@@ -153,7 +153,9 @@ margin-top: 40px;
     gap: 10px;
 }
 .popular2>div{
-    
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .bar2{
@@ -489,24 +491,47 @@ document.querySelector(".popular").append(div)
 
 var popular2 = [
 {name:"Special Health Package",
-text:"TOTAL INCLUSIONS : 63"},
-{name:"Diabetes And Lipid Profile",
-text:"TOTAL INCLUSIONS : 63"},
-{name:"Comprehensive Package -Women",
-text:"TOTAL INCLUSIONS : 63"},
+name1:"Premium",
+text:"TOTAL INCLUSIONS : 63",
+name2:"Hba1c, Glycated Hemoglobin",
+name3:"Estimated Average Glucose(Eag)",
+image1:"https://newassets.apollo247.com/images/circle_logo.png",
+name4:"Price र 2400"},
+{name:"Comprehensive Package ",
+name1:"-Women",
+text:"TOTAL INCLUSIONS : 65",
+name2:"Hba1c, Glycated Hemoglobin",
+name3:"Estimated Average Glucose(Eag)",
+image1:"https://newassets.apollo247.com/images/circle_logo.png",
+name4:"Price र 1999"},
+{name:"Diabetes And Lipid ",
+name1:"Profile ",
+text:"TOTAL INCLUSIONS : 12",
+name2:"Hba1c, Glycated Hemoglobin",
+name3:"Estimated Average Glucose(Eag)",
+image1:"https://newassets.apollo247.com/images/circle_logo.png",
+name4:" Price र 698"},
 ];
 
 popular2.map(function(elem){
-var div = document.createElement("div");
-var div1 = document.createElement("div");
-var h2 = document.createElement("h3")
-h2.innerText=elem.name;
-div1.append(h2)
-div.append(div1)
+    var div = document.createElement("div");
+var head = document.createElement("h3");
+head.innerText=elem.name;
+var name1 = document.createElement("h3");
+name1.innerText=elem.name1;
+var text = document.createElement("p");
+text.innerText=elem.text;
+var name2 = document.createElement("h5");
+name2.innerText=elem.name2;
+var name3 = document.createElement("h5");
+name3.innerText=elem.name3;
+var name4 = document.createElement("p");
+name4.innerText=elem.name4;
+var image1 = document.createElement("img");
+image1.setAttribute("src",elem.image1);
+div.append(head,name1,text,name2,name3,image1,name4);
 
 document.querySelector(".popular2").append(div)
-
-
 });
 
 
