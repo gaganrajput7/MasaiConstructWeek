@@ -13,7 +13,7 @@ body{
     margin: auto;
     
 }
-.top {
+.topbar {
     display: flex;
 justify-content: center;
 margin: auto;
@@ -139,14 +139,14 @@ height: 80%;
 .popular2 {
 display: grid;
 grid-template-columns: 30% 30% 30%;
-grid-template-rows: 300px;
+grid-template-rows: 290px;
 justify-content: center;
 gap: 10px;
 }
 .popular2>div{
 border-radius: 10px;
-padding: 10px;
-line-height: 10px;
+
+
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .popular2>div > img{
@@ -358,4 +358,122 @@ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1p
 width: 26px;
 height: 18px;
 margin-right: 10px;
+}
+.pacage{
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+.popular2 p {
+    margin-left: 20px;
+    font-size: small;
+}
+.pacage1{
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+.shortp{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.shortp>img{
+    width: 30px;
+    height: 30px;
+}
+.pricecart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.footer{
+    width: 80%;
+    background-color: white;
+    margin-left: 50px;
+   
+    color: black; 
+}
+
+.foothead{
+    font-size: 14px; 
+    font-weight: 700;
+    color: black;
+}
+.footer p{
+    color: rgb(138, 135, 135);
+}
+.footer2 {
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    
+}
+.footer2head{
+    color: #fc9916;
+}
+.footerlogo{
+    width:100px;
+    height:77px;
+    margin-left:400px;
+}
+.shouldbeinline li {
+    display: inline;
+    color: white;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+td{
+    font-size: 12px;
+    font-weight: 300;
+    color:#02475b
+   
+}
+tr{
+    font-size: 13px;
+    font-weight: 600;
+    color: #01475b;
+}
+.top {
+    display: flex;
+    justify-content:space-evenly;
+    background-color:white;
+}
+table{
+
+    margin-left:170px;
+    width: 300px;
+    height:70px;
+
+
+    justify-content: space-evenly;
+    background-color: white;
+}
+.logo{
+    margin-right:70px;
+    margin-top:10px;
+}
+.cartt{
+    margin-right:-90px;
+}
+.profile{
+    margin-right:-100px;
 }
