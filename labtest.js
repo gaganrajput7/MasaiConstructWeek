@@ -50,14 +50,14 @@ var popular = [
      price:"₹ 2824 save 23706",
    },
    {
-    head:"Special Health Package Premium",
-    text:"TOTAL INCLUSIONS : 63",
+    head:"Comprehensive Package-Women",
+    text:"TOTAL INCLUSIONS : 8",
     text2:"Hba1c, Glycated Hemoglobin",
-    text3:"Estimated Average Glucose (Eag)", a:"+58 More",
-    shortprice:"price 2400",
+    text3:"Estimated Average Glucose (Eag)", a:"+5 More",
+    shortprice:"price 199",
     shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
     shortprice1:"MRP 6530 57% off ",
-    price:"₹ 2824 save 23706",
+    price:"₹ 284 save 706",
   },
   {
     head:"Special Health Package Premium",
@@ -67,9 +67,9 @@ var popular = [
     a:"+58 More",
 
     shortimage:"https://newassets.apollo247.com/images/circle_logo.png",
-    shortprice:"price 2400",
+    shortprice:"price 2700",
     shortprice1:"MRP 6530 57% off ",
-    price:"₹ 2824 save 23706",
+    price:"₹ 2024 save 276",
   }
     ];
     
@@ -193,7 +193,7 @@ document.querySelector(".popular2").append(div);
     simpletext:"3 Parameters included",
     shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
     {image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
-    text:"Diabetes Package Advance",
+    text:"Diabetes PackageAdvance",
     simpletext:"3 Parameters included",
     shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
     {image:"https://newassets.apollo247.com/organs/ic_blood.png",
