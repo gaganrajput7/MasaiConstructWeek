@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
 body{
     width:max-content;
@@ -21,12 +22,17 @@ tr{
     background-color: white;
 
     width: 1000px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&family=Poppins:wght@100;200;300&display=swap');
+body{
+    width:1000px;
+>>>>>>> parent of 1ffc461 (doctorspageicon)
     margin: auto;
     font-family: 'Montserrat', sans-serif;
+
     font-family: 'Poppins', sans-serif;
 }
-
-.top {
+.top{
     display: flex;
     justify-content:space-evenly;
     background-color:white;
@@ -39,9 +45,13 @@ table{
 
 
     justify-content: space-evenly;
-    background-color: white;
+    background-color:white;
 }
+table{
 
+    margin-left:170px;
+
+<<<<<<< HEAD
 table {
     margin-left: 170px;
 }
@@ -54,28 +64,28 @@ table {
 }
 .profile{
     margin-right:-100px;
+=======
+
+>>>>>>> parent of 1ffc461 (doctorspageicon)
 }
 .logo{
     margin-left: -70px;
-    margin-top: 10px;
+    margin-top:10px;
 }
-
-.cart {
-    margin-right: -100px;
+.cart{
+    margin-right:-100px;
 }
-
-.profile {
-    margin-right: -150px;
+.profile{
+    margin-right:-150px;
 }
-
-h1 {
-    margin-left: 60px;
+h1{
+    margin-left:60px;
 }
-
-.hello {
+.hello{
     display: flex;
-    background-color: white;
+    background-color:white;
     overflow: hidden;
+<<<<<<< HEAD
 }
 .slider{
     margin-top:40px;
@@ -87,20 +97,33 @@ h1 {
 button {
     width: 350px;
     height: 60px;
-}
+=======
 
-.button {
-    width: 175px;
+>>>>>>> parent of 1ffc461 (doctorspageicon)
+}
+button{
+    width:350px;
     height: 60px;
 }
+.button{
+    width:175px;
+    height:60px;
+}
 
+<<<<<<< HEAD
 .slider {
     width: 950px;
     height: 166px;
     overflow: scroll;
+=======
+.slider{
+    width:1000px;
+    height:166px;
+    overflow:scroll;
+>>>>>>> parent of 1ffc461 (doctorspageicon)
     background-color: black;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x:auto;
     white-space: nowrap;
     margin-left:20px;
     border-radius: 5px;
@@ -214,7 +237,13 @@ a {
     width:900px;
     margin: auto;
 }
+.slider .img{
+    margin:10px;
+    margin-top:-10px;
+}
 
+
+<<<<<<< HEAD
 .healthblog>p {
     margin-left: 20px;
     color: #07Ae8B;
@@ -281,3 +310,5 @@ span{
     margin-top: -10px;
     
 }
+=======
+>>>>>>> parent of 1ffc461 (doctorspageicon)
