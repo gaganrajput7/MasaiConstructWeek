@@ -104,6 +104,20 @@
             opacity: 0.6;            font-size: 12px !important; border-bottom: 2px #02475b;
             line-height: 17px !important;            padding-top: 3px;
         }
+
+        #cartImage{
+            width: 30px;
+            height: 30px;
+            margin-top: 4px;
+            border-radius: 70%;
+           
+        }
+        #loginImage{
+            width: 45px;
+            height: 40px;
+            border-radius: 50%;
+            
+        }
         
         
         
@@ -835,5 +849,34 @@
             color: white;
             font-weight: 200;
             text-decoration: none;
+        }
+        #footerButtom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .footerBottomText{
+            color: white;
+            font-weight: 500;
+        }
+        #footerIcons{
+            display: flex;
+            justify-content: space-between;
+        }
+        #footerIcons img{
+            width: 45px;
+            height: 35px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+        #playStoreIcons{
+            display: flex;
+            justify-content: space-between;
+        }
+        #playStoreIcons img{
+            width: 122px;
+            height: 36px;
+            margin-right: 10px;
         }
         

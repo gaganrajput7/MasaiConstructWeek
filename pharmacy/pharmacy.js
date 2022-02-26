@@ -28,7 +28,7 @@
                 var maindiv1=document.createElement("div")
             
                 var achorTag=document.createElement("a")
-                achorTag.setAttribute("href","")
+                achorTag.setAttribute("href","covidEssentialViewall.html")
                 achorTag.setAttribute("class","achorTag")
 
                 var innerDiv=document.createElement("div")
@@ -742,7 +742,7 @@
             var maindiv1=document.createElement("div")
         
             var achorTag=document.createElement("a")
-            achorTag.setAttribute("href","")
+            achorTag.setAttribute("href","covidEssentialViewall.html")
             achorTag.setAttribute("class","achorTag")
 
             var innerDiv=document.createElement("div")
@@ -982,7 +982,7 @@
         var maindiv1=document.createElement("div")
 
         var achorTag=document.createElement("a")
-        achorTag.setAttribute("href","")
+        achorTag.setAttribute("href","covidEssentialViewall.html")
         achorTag.setAttribute("class","achorTag")
 
         var innerDiv=document.createElement("div")
