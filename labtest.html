@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB TESTS</title>
+    <title>Document</title>
     <style>
 
         body{
@@ -154,8 +154,8 @@ margin-top: 40px;
 }
 .popular2>div{
     border-radius: 10px;
-    padding: 20px;
-    line-height: 15px;
+    padding: 10px;
+    line-height: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .popular2>div > img{
@@ -215,7 +215,7 @@ margin-top: 40px;
     margin: auto;
     font-size: small;
 }
-hr {
+.topbooked hr {
     width: 90%;
     color: rgb(2,71,91);
 }
@@ -296,7 +296,7 @@ hr {
     
 }
 #organ>div {
-    border-radius: 5px;
+    
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .vital{
@@ -332,41 +332,6 @@ hr {
     margin-left: 10px;
     
 }
-<<<<<<< HEAD
-.women{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 50%;
-    text-align: center;
-    font-weight: bold;
-}
-.women>div{
-    
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.smallad{
-width: 100%;
-height: 50%;
-border: 1px solid red;
-
-}
-.womenwell{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: auto;
-    gap: 15px;
-    margin-left: 50px;
-    margin-right: 80px;
-}
-.womenwell>div{
-    border-radius: 5px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-.womenwell>img{
-    width: 26px;
-    height: 18px;
-    margin-right: 10px;
-=======
 #container11{
             width: 95%;
             margin: auto;
@@ -411,7 +376,6 @@ border: 1px solid red;
             line-height: 1px;
             margin-right: 10px;
         }
->>>>>>> 1a1e4b1d4078657226d97e9ee8a6429e85b41f43
     </style>
 </head>
 <body id="head">
@@ -520,21 +484,8 @@ border: 1px solid red;
 
                      <div id="organ">
                          <div class="vital"></div>
-                         <div class="women"></div>
+                         <div class="wowen"></div>
                      </div>   
-
-
-
-
-                     <div id="bar">
-                        <h3>WOMEN WELLNESS (18)
-                    
-                        </h3>
-                        <span><a href="">View All</a></span>
-                        </div>
-
-
-                   <div class="womenwell"></div>     
 
  </div>
  <div id="container11">
@@ -669,9 +620,13 @@ border: 1px solid red;
     </div>    
     
 </div>
+
+
+
+
+      
 </body>
 </html>
-
 <script>
 var popular = [
 {image: "https://newassets.apollo247.com/cms/2021-06/infection.png",
@@ -925,113 +880,7 @@ div2.append(image)
 div1.append(div2)
 div.append(div1,text)
 document.querySelector(".vital").append(div)
-});
-
-var womenorgan = [
-{image:"https://newassets.apollo247.com/cms/2021-05/heart.png",
-text:"Heart"},
-{image:"https://newassets.apollo247.com/cms/2021-05/thyroid.png",
-text:"Thyroid"},
-{image:"https://newassets.apollo247.com/cms/2021-05/jointpain_0.png",
-text:"Joint Pain"},
-{image:"https://newassets.apollo247.com/cms/2021-05/liver.png",
-text:"Liver"},
-];
-womenorgan.map(function(elem){
-
-    var div = document.createElement("div");
-
-var div1 =  document.createElement("div");
-div1.setAttribute("class","organimage");
-var div2 =  document.createElement("div");
-div2.setAttribute("class","roundimage");
-var image = document.createElement("img");
-image.setAttribute("src",elem.image);
-var text = document.createElement("p");
-text.innerText=elem.text;
-div2.append(image)
-div1.append(div2)
-
-var div3 = document.createElement("div");
-div3.setAttribute("class","smallad");  
-div.append(div1,text)
-document.querySelector(".women").append(div);
-
-});
-
-
-
-
-
-
-
-
-
-
-var diaeties = [
-{image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Diabetes And Lipid Profile",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Diabetes... Screening",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
-text:"Diabetes Package Basic",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/ic_diabetes.png",
-text:"Diabetes Package Advance",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"Lipid Profile",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-{image:"https://newassets.apollo247.com/organs/ic_blood.png",
-text:"HbA1c, Glycated Hemoglobin",
-simpletext:"3 Parameters included",
-shortimage:"https://newassets.apollo247.com/images/circle_logo.png"},
-];
-diaeties.map(function(elem){
-var div = document.createElement("div");
-var div1 = document.createElement("div");
-div1.setAttribute("class","shortimg");
-var div2 = document.createElement("div");
-div2.innerText=elem.text
-div2.setAttribute("class","h2text");
-var div3 = document.createElement("div");
-div3.setAttribute("class","shorttext")
-div3.innerText=elem.simpletext;
-var img = document.createElement("img");
-img.setAttribute("src",elem.image);
-var line = document.createElement("hr");
-div1.append(img);
-var div4 = document.createElement("div");
-div4.setAttribute("class","circelprice")
-var short = document.createElement("img");
-short.setAttribute("src",elem.shortimage);
-var p = document.createElement("p");
-p.innerText="Price ₹700";
-var div5 = document.createElement("div");
-div5.setAttribute("class","price");
-var h2 = document.createElement("h3");
-h2.innerText="₹ 700";
-
-div5.append(h2)
-var div6 = document.createElement("div");
-div6.setAttribute("class","cart");
-var addcart = document.createElement("a");
-addcart.innerText ="ADD TO CART";
-div6.append(addcart)
-div4.append(short,p)
-div.append(div1,div2,div3,line,div4,div5,div6)
-
-
-
-document.querySelector(".womenwell").append(div);
-});
+})
 
 
 
