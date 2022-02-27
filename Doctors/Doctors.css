@@ -688,8 +688,382 @@ li>a {
     display: none;
 }
 
-@media all and (max-width:1100px) {
-    body {
-        background-color: red;
+@media all and (max-width:1250px) {
+    .body {
+        width: 90%;
+    }
+    .top {
+        width: 68%;
+    }
+    .right {
+        width: 40%;
+    }
+    .left {
+        width: 60%;
+    }
+    #top-Specialities {
+        display: block;
+        box-sizing: content-box;
+    }
+    #specialties {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 30px;
+    }
+    #specialties>div {
+        width: 60%;
+        height: 100%;
+    }
+    #catcont {
+        margin-top: 300px;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    #locatitons>a {
+        width: 20%;
+    }
+    .bottomlink {
+        width: 93%;
+        margin: auto;
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:1150px) {
+    .container {
+        width: 70%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .top {
+        width: 64%;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+    #top-Specialities {
+        display: block;
+        box-sizing: content-box;
+    }
+    #specialties {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+    }
+    #specialties>div {
+        width: 100%;
+        height: 100%;
+    }
+    #catcont {
+        margin-top: 50px;
+    }
+    .bottomlink {
+        width: 87%;
+        margin: auto;
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:1000px) {
+    .inner {
+        display: none;
+    }
+    .second {
+        display: none;
+    }
+    .body {
+        width: 46%;
+        margin: auto;
+    }
+    .header {
+        width: 55%;
+    }
+    .headerlink {
+        background-color: white;
+        min-width: 295%;
+    }
+    .bottomlink {
+        width: 83%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    #locations>a {
+        padding: 10px;
+    }
+    #catcont {
+        margin-top: 120px;
+    }
+}
+
+@media all and (max-width:850px) {
+    .inner {
+        display: none;
+    }
+    .second {
+        display: none;
+    }
+    .body {
+        width: 36%;
+        margin: auto;
+    }
+    .header {
+        width: 40%;
+    }
+    .body {
+        width: 65%;
+    }
+    .top {
+        width: 80%;
+    }
+    .headerlink {
+        background-color: white;
+        min-width: 365%;
+    }
+    .bottomlink {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    #locations>a {
+        padding: 10px;
+    }
+    #top-Specialities {
+        display: block;
+        box-sizing: content-box;
+    }
+    #specialties {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+    }
+    #specialties>div {
+        width: 100%;
+        height: 100%;
+    }
+    .containerfooter {
+        width: 85%;
+    }
+    .category {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
+
+@media all and (max-width:600px) {
+    .inner {
+        display: none;
+    }
+    .second {
+        display: none;
+    }
+    .body {
+        width: 36%;
+        margin: auto;
+    }
+    .header {
+        width: 40%;
+    }
+    .body {
+        width: 93%;
+    }
+    .top {
+        width: 93%;
+    }
+    .left {
+        width: 90%;
+    }
+    #doctorconsult {
+        width: 100%;
+        padding: 20px;
+    }
+    #image250 {
+        width: 110%;
+    }
+    #rs250 {
+        width: 100%;
+    }
+    #catcont {
+        margin-top: 400px;
+    }
+    .headerlink {
+        background-color: white;
+        min-width: 265%;
+    }
+    .bottomlink {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    .containerfooter {
+        width: 95%;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    #locations>a {
+        padding: 10px;
+    }
+    #top-Specialities {
+        display: block;
+        box-sizing: content-box;
+    }
+    #specialties {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+    #specialties>div {
+        width: 100%;
+        height: 100%;
+    }
+    .category {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (max-width:400px) {
+    .inner {
+        display: none;
+    }
+    .second {
+        display: none;
+    }
+    .body {
+        width: 36%;
+        margin: auto;
+    }
+    .header {
+        width: 50%;
+    }
+    .body {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+    }
+    .left {
+        width: 90%;
+    }
+    #doctorconsult {
+        width: 100%;
+        padding: 20px;
+    }
+    #image250 {
+        width: 110%;
+    }
+    #rs250 {
+        width: 100%;
+    }
+    #catcont {
+        margin-top: 400px;
+    }
+    .headerlink {
+        background-color: white;
+        min-width: 185%;
+    }
+    .bottomlink {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    .containerfooter {
+        width: 95%;
+    }
+    #locations {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #locations>a {
+        padding: 10px;
+    }
+    #top-Specialities {
+        display: block;
+        box-sizing: content-box;
+    }
+    #specialties {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+    #specialties>div {
+        width: 100%;
+        height: 100%;
+    }
+    .category {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .textcont {
+        width: 90%;
+    }
+}
+
+@media all and (max-width:300px) {
+    .container {
+        width: 70%;
+        margin: 0px;
+        background-color: white;
+    }
+    .body {
+        background-color: white;
+        margin-left: 0px;
+    }
+    .headerlink {
+        width: 50%;
+    }
+    .top {
+        width: 100%;
+    }
+    #catcont {
+        margin-top: 600px;
+    }
+    .left {
+        margin-left: 0px;
+    }
+    #doctorconsult {
+        margin-left: 0px;
+        padding: 10px;
+        /* width: 100%; */
+    }
+    #locations {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #img {
+        margin: 0px;
+    }
+    #searchbar {
+        width: 80%;
+    }
+    input {
+        font-size: 5px;
+        width: 60%;
     }
 }
